@@ -6,6 +6,7 @@ import (
 
 	throughputLimiter "github.com/coderchirag/go-learning/concurrency/throughput_limiter"
 	"github.com/coderchirag/go-learning/http"
+	"github.com/coderchirag/go-learning/playground"
 )
 
 
@@ -27,6 +28,8 @@ func main() {
 			rateLimiterApp()
 		case "server":
 			http.StartServer()
+		case "pg":
+			playground.Playground()
 	}
-	
+
 }
