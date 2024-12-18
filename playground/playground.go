@@ -1,7 +1,7 @@
 package playground
 
 import (
-	libFmt "github.com/coderchirag/go-learning/stdlib/fmt"
+	"github.com/coderchirag/go-learning/fundamentals/enums"
 )
 
 func Playground() {
@@ -11,5 +11,6 @@ func Playground() {
 	// 	log.Fatal(err)
 	// }
 
-	libFmt.FmtExamples()
+	// libFmt.FmtExamples()
+	enums.EnumExample()
 }
