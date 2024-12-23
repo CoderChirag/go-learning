@@ -1,8 +1,7 @@
 package playground
 
 import (
-	"github.com/coderchirag/go-learning/fundamentals/enums"
-	"github.com/coderchirag/go-learning/fundamentals/iterators"
+	libIter "github.com/coderchirag/go-learning/stdlib/iter"
 )
 
 func Playground() {
@@ -13,7 +12,6 @@ func Playground() {
 	// }
 
 	// libFmt.FmtExamples()
-	enums.EnumExample()
 	// enums.EnumExample()
-	iterators.IterExamples()
+	libIter.IterExamples()
 }
