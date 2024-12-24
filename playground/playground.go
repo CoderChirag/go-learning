@@ -7,6 +7,7 @@ import (
 	libErrors "github.com/coderchirag/go-learning/stdlib/errors"
 	libFmt "github.com/coderchirag/go-learning/stdlib/fmt"
 	libIter "github.com/coderchirag/go-learning/stdlib/iter"
+	"github.com/coderchirag/go-learning/third-party/sync/errgroup"
 )
 
 func RunFmtExamples(){
@@ -34,11 +35,26 @@ func RunWorkerPoolsExamples() {
 	worker_pools.WorkerPoolsExample()
 }
 
+func RunErrGroupJustErrorsExamples(){
+	errgroup.JustErrorsExample()
+}
+
+func RunErrorGroupParallelExamples(){
+	errgroup.ParallelExample()
+}
+
+func RunErrorGroupPipelineExamples(){
+	errgroup.PipelineExample()
+}
+
 func Playground() {
 	// RunFmtExamples()
 	// RunEnumsExamples()
 	// RunIterExamples()
 	// RunErrorsExamples()
 	// RunTimersExamples()
-	RunWorkerPoolsExamples()
+	// RunWorkerPoolsExamples()
+	// RunErrGroupJustErrorsExamples()
+	// RunErrorGroupParallelExamples()
+	RunErrorGroupPipelineExamples()
 }
