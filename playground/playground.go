@@ -5,6 +5,7 @@ import (
 
 	"github.com/coderchirag/go-learning/fundamentals/concurrency/atomic_counters"
 	"github.com/coderchirag/go-learning/fundamentals/concurrency/errgroup"
+	"github.com/coderchirag/go-learning/fundamentals/concurrency/mutexes"
 	"github.com/coderchirag/go-learning/fundamentals/concurrency/rate_limiting"
 	"github.com/coderchirag/go-learning/fundamentals/enums"
 	"github.com/coderchirag/go-learning/fundamentals/timers"
@@ -61,6 +62,9 @@ func RunAtomicCountersExamples(){
 	atomic_counters.AtomicCounter()
 }
 
+func RunMutexesExamples(){
+	mutexes.MutexExample()
+}
 
 func Playground() {
 	// RunFmtExamples()
@@ -73,5 +77,6 @@ func Playground() {
 	// RunErrorGroupParallelExamples()
 	// RunErrorGroupPipelineExamples()
 	// RunRateLimitingExamples()
-	RunAtomicCountersExamples()
+	// RunAtomicCountersExamples()
+	RunMutexesExamples()
 }
