@@ -3,6 +3,7 @@ package playground
 import (
 	"fmt"
 
+	"github.com/coderchirag/go-learning/fundamentals/concurrency/atomic_counters"
 	"github.com/coderchirag/go-learning/fundamentals/concurrency/errgroup"
 	"github.com/coderchirag/go-learning/fundamentals/concurrency/rate_limiting"
 	"github.com/coderchirag/go-learning/fundamentals/enums"
@@ -56,6 +57,10 @@ func RunRateLimitingExamples(){
 	rate_limiting.BurstyRateLimiter()
 }
 
+func RunAtomicCountersExamples(){
+	atomic_counters.AtomicCounter()
+}
+
 
 func Playground() {
 	// RunFmtExamples()
@@ -67,5 +72,6 @@ func Playground() {
 	// RunErrGroupJustErrorsExamples()
 	// RunErrorGroupParallelExamples()
 	// RunErrorGroupPipelineExamples()
-	RunRateLimitingExamples()
+	// RunRateLimitingExamples()
+	RunAtomicCountersExamples()
 }
