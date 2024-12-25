@@ -7,6 +7,7 @@ import (
 	"github.com/coderchirag/go-learning/fundamentals/concurrency/errgroup"
 	"github.com/coderchirag/go-learning/fundamentals/concurrency/mutexes"
 	"github.com/coderchirag/go-learning/fundamentals/concurrency/rate_limiting"
+	"github.com/coderchirag/go-learning/fundamentals/concurrency/stateful_goroutines"
 	"github.com/coderchirag/go-learning/fundamentals/enums"
 	"github.com/coderchirag/go-learning/fundamentals/timers"
 	"github.com/coderchirag/go-learning/fundamentals/worker_pools"
@@ -66,6 +67,10 @@ func RunMutexesExamples(){
 	mutexes.MutexExample()
 }
 
+func RunStatefulGoRoutinesExamples(){
+	stateful_goroutines.StatefulGoroutine()
+}
+
 func Playground() {
 	// RunFmtExamples()
 	// RunEnumsExamples()
@@ -78,5 +83,6 @@ func Playground() {
 	// RunErrorGroupPipelineExamples()
 	// RunRateLimitingExamples()
 	// RunAtomicCountersExamples()
-	RunMutexesExamples()
+	// RunMutexesExamples()
+	RunStatefulGoRoutinesExamples()
 }
