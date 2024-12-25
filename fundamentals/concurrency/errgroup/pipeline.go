@@ -18,7 +18,7 @@ func PipelineExample(){
 		panic(err)
 	}
 
-	m, err := md5All(context.Background(), fmt.Sprintf("%s/third-party", root))
+	m, err := md5All(context.Background(), fmt.Sprintf("%s/fundamentals", root))
 	if err != nil {
 		log.Fatal(err)
 	}
