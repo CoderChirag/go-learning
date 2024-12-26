@@ -3,11 +3,11 @@ package playground
 import (
 	"fmt"
 
-	"github.com/coderchirag/go-learning/fundamentals/concurrency/atomic_counters"
-	"github.com/coderchirag/go-learning/fundamentals/concurrency/errgroup"
-	"github.com/coderchirag/go-learning/fundamentals/concurrency/mutexes"
-	"github.com/coderchirag/go-learning/fundamentals/concurrency/rate_limiting"
-	"github.com/coderchirag/go-learning/fundamentals/concurrency/stateful_goroutines"
+	"github.com/coderchirag/go-learning/fundamentals/concurrency/examples/atomic_counters"
+	"github.com/coderchirag/go-learning/fundamentals/concurrency/examples/errgroup"
+	"github.com/coderchirag/go-learning/fundamentals/concurrency/examples/mutexes"
+	"github.com/coderchirag/go-learning/fundamentals/concurrency/examples/rate_limiting"
+	"github.com/coderchirag/go-learning/fundamentals/concurrency/examples/stateful_goroutines"
 	"github.com/coderchirag/go-learning/fundamentals/enums"
 	"github.com/coderchirag/go-learning/fundamentals/timers"
 	"github.com/coderchirag/go-learning/fundamentals/worker_pools"
