@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/coderchirag/go-learning/concurrency/rate_limiter/transport"
+	"github.com/coderchirag/go-learning/fundamentals/concurrency/mini_projects/rate_limiter/transport"
 )
 
 type Client interface {

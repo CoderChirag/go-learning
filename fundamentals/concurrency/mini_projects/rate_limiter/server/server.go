@@ -3,8 +3,8 @@ package server
 import (
 	"time"
 
-	"github.com/coderchirag/go-learning/concurrency/rate_limiter"
-	"github.com/coderchirag/go-learning/concurrency/rate_limiter/transport"
+	"github.com/coderchirag/go-learning/fundamentals/concurrency/mini_projects/rate_limiter"
+	"github.com/coderchirag/go-learning/fundamentals/concurrency/mini_projects/rate_limiter/transport"
 )
 
 type Server interface {

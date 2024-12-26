@@ -4,7 +4,8 @@ import (
 	"log"
 	"os"
 
-	throughputLimiter "github.com/coderchirag/go-learning/concurrency/throughput_limiter"
+	rateLimiterApp "github.com/coderchirag/go-learning/fundamentals/concurrency/mini_projects/rate_limiter/app"
+	throughputLimiter "github.com/coderchirag/go-learning/fundamentals/concurrency/mini_projects/throughput_limiter"
 	"github.com/coderchirag/go-learning/http"
 	"github.com/coderchirag/go-learning/playground"
 )
@@ -25,7 +26,7 @@ func main() {
 		case "tpl":
 			throughputLimiter.DoTaskConcurrentlyWithThroughputLimit(20, 3)
 		case "rl":
-			rateLimiterApp()
+			rateLimiterApp.RateLimiterApp()
 		case "server":
 			http.StartServer()
 		case "pg":

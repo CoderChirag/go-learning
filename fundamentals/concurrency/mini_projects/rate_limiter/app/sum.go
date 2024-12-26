@@ -1,4 +1,4 @@
-package main
+package app
 
 func sum(a ...any) any {
 	s := 0

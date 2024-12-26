@@ -1,16 +1,16 @@
-package main
+package app
 
 import (
 	"log"
 	"math/rand"
 	"sync"
 
-	clientLib "github.com/coderchirag/go-learning/concurrency/rate_limiter/client"
-	serverLib "github.com/coderchirag/go-learning/concurrency/rate_limiter/server"
-	transport "github.com/coderchirag/go-learning/concurrency/rate_limiter/transport"
+	clientLib "github.com/coderchirag/go-learning/fundamentals/concurrency/mini_projects/rate_limiter/client"
+	serverLib "github.com/coderchirag/go-learning/fundamentals/concurrency/mini_projects/rate_limiter/server"
+	transport "github.com/coderchirag/go-learning/fundamentals/concurrency/mini_projects/rate_limiter/transport"
 )
 
-func rateLimiterApp(){
+func RateLimiterApp(){
 	var server serverLib.RPCServer
 	var client clientLib.RPCClient
 
