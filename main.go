@@ -4,6 +4,7 @@ import (
 	"log"
 	"os"
 
+	"github.com/coderchirag/go-learning/fundamentals/concurrency/mini_projects/feed_reader"
 	rateLimiterApp "github.com/coderchirag/go-learning/fundamentals/concurrency/mini_projects/rate_limiter/app"
 	throughputLimiter "github.com/coderchirag/go-learning/fundamentals/concurrency/mini_projects/throughput_limiter"
 	"github.com/coderchirag/go-learning/http"
@@ -27,6 +28,8 @@ func main() {
 			throughputLimiter.DoTaskConcurrentlyWithThroughputLimit(20, 3)
 		case "rl":
 			rateLimiterApp.RateLimiterApp()
+		case "fr":
+			feed_reader.App()
 		case "server":
 			http.StartServer()
 		case "pg":
