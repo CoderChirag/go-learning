@@ -11,6 +11,7 @@ import (
 	"github.com/coderchirag/go-learning/fundamentals/concurrency/examples/worker_pools"
 	"github.com/coderchirag/go-learning/fundamentals/enums"
 	"github.com/coderchirag/go-learning/fundamentals/timers"
+	"github.com/coderchirag/go-learning/stdlib/encoding"
 	libErrors "github.com/coderchirag/go-learning/stdlib/errors"
 	libFmt "github.com/coderchirag/go-learning/stdlib/fmt"
 	libIter "github.com/coderchirag/go-learning/stdlib/iter"
@@ -76,6 +77,10 @@ func RunTemplatesExamples() {
 	templates.Templates()
 }
 
+func RunJsonExamples(){
+	encoding.JSON()
+}
+
 func Playground() {
 	// RunFmtExamples()
 	// RunEnumsExamples()
@@ -90,5 +95,6 @@ func Playground() {
 	// RunAtomicCountersExamples()
 	// RunMutexesExamples()
 	// RunStatefulGoRoutinesExamples()
-	RunTemplatesExamples()
+	// RunTemplatesExamples()
+	RunJsonExamples()
 }
