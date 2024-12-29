@@ -14,6 +14,7 @@ import (
 	"github.com/coderchirag/go-learning/stdlib/encoding"
 	libErrors "github.com/coderchirag/go-learning/stdlib/errors"
 	libFmt "github.com/coderchirag/go-learning/stdlib/fmt"
+	"github.com/coderchirag/go-learning/stdlib/http"
 	libIter "github.com/coderchirag/go-learning/stdlib/iter"
 	"github.com/coderchirag/go-learning/stdlib/templates"
 )
@@ -81,6 +82,10 @@ func RunJsonExamples(){
 	encoding.JSON()
 }
 
+func RunHttpClientExamples(){
+	http.Client()
+}
+
 func Playground() {
 	// RunFmtExamples()
 	// RunEnumsExamples()
@@ -96,5 +101,6 @@ func Playground() {
 	// RunMutexesExamples()
 	// RunStatefulGoRoutinesExamples()
 	// RunTemplatesExamples()
-	RunJsonExamples()
+	// RunJsonExamples()
+	RunHttpClientExamples()
 }
