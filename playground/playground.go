@@ -86,6 +86,10 @@ func RunHttpClientExamples(){
 	http.Client()
 }
 
+func RuntHttpServerExamples(){
+	http.Server()
+}
+
 func Playground() {
 	// RunFmtExamples()
 	// RunEnumsExamples()
@@ -102,5 +106,6 @@ func Playground() {
 	// RunStatefulGoRoutinesExamples()
 	// RunTemplatesExamples()
 	// RunJsonExamples()
-	RunHttpClientExamples()
+	// RunHttpClientExamples()
+	RuntHttpServerExamples()
 }
