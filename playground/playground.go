@@ -14,6 +14,7 @@ import (
 	libErrors "github.com/coderchirag/go-learning/stdlib/errors"
 	libFmt "github.com/coderchirag/go-learning/stdlib/fmt"
 	libIter "github.com/coderchirag/go-learning/stdlib/iter"
+	"github.com/coderchirag/go-learning/stdlib/templates"
 )
 
 func RunFmtExamples(){
@@ -71,6 +72,10 @@ func RunStatefulGoRoutinesExamples(){
 	stateful_goroutines.StatefulGoroutine()
 }
 
+func RunTemplatesExamples() {
+	templates.Templates()
+}
+
 func Playground() {
 	// RunFmtExamples()
 	// RunEnumsExamples()
@@ -84,5 +89,6 @@ func Playground() {
 	// RunRateLimitingExamples()
 	// RunAtomicCountersExamples()
 	// RunMutexesExamples()
-	RunStatefulGoRoutinesExamples()
+	// RunStatefulGoRoutinesExamples()
+	RunTemplatesExamples()
 }
